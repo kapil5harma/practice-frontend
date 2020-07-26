@@ -1,0 +1,161 @@
+@import "~antd/dist/antd.css";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+  user-select: none;
+}
+
+*:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#root,
+.App {
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-dark {
+  width: 150px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: #242323;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ant-btn.btn-dark:hover,
+.ant-btn.btn-dark:focus {
+  color: #242323 !important;
+  background-color: #ffffff !important;
+  border-color: #242323 !important;
+}
+
+.btn-blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #0073b3;
+  text-transform: uppercase;
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.95;
+    color: #ffffff;
+    background-color: #0073b3;
+  }
+}
+
+.inline-flex {
+  display: inline-flex !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.justify-start {
+  justify-content: flex-start !important;
+}
+
+.justify-end {
+  justify-content: flex-end !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.items-start {
+  align-items: flex-start !important;
+}
+
+.items-end {
+  align-items: flex-end !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.items-between {
+  align-items: space-between !important;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+// ? Enum values for Custom Padding and Margins.
+$sizes: 0 1 5 10 15 20 25 30;
+
+// ? Custom Padding and Margins and line-height.
+@each $size in $sizes {
+  .pt-#{$size} {
+    padding-top: #{$size}px !important;
+  }
+  .pr-#{$size} {
+    padding-right: #{$size}px !important;
+  }
+  .pb-#{$size} {
+    padding-bottom: #{$size}px !important;
+  }
+  .pl-#{$size} {
+    padding-left: #{$size}px !important;
+  }
+
+  .mt-#{$size} {
+    margin-top: #{$size}px !important;
+  }
+  .mr-#{$size} {
+    margin-right: #{$size}px !important;
+  }
+  .mb-#{$size} {
+    margin-bottom: #{$size}px !important;
+  }
+  .ml-#{$size} {
+    margin-left: #{$size}px !important;
+  }
+  .lh-#{$size} {
+    line-height: #{$size} !important;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
