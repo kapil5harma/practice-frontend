@@ -1,0 +1,17 @@
+.AuthFormFooter {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.29;
+  letter-spacing: 0.28px;
+  text-align: left;
+  color: #898b8d;
+  width: 100%;
+  .dots {
+    margin: 0 1rem;
+  }
+}
