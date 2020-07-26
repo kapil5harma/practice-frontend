@@ -1,0 +1,82 @@
+.LoginForm {
+  .ant-legacy-form-item {
+    margin-bottom: 20px;
+    .ant-legacy-form-item-control-wrapper {
+      width: 100%;
+    }
+  }
+
+  label {
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a4b0b9 !important;
+  }
+
+  input {
+    border: none;
+    background: none;
+    border-radius: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #242323;
+    &::placeholder {
+      font-size: 1.5rem;
+    }
+  }
+
+  .input-row {
+    flex-direction: column;
+    padding: 0.5rem;
+    background: #f5f6f8 0% 0% no-repeat padding-box;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+  }
+
+  .login-form-button {
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 4px;
+    min-width: 150px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(98, 95, 217);
+    &:hover,
+    &:focus {
+      color: rgb(98, 95, 217);
+      background-color: #fff;
+      border-color: rgb(98, 95, 217);
+    }
+  }
+  .login-form-forgot {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.32px;
+    text-align: right;
+    color: rgb(98, 95, 217);
+    text-decoration: underline;
+  }
+
+  .ant-legacy-form-item-label {
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .ant-legacy-form-item-required::before {
+    visibility: hidden;
+  }
+}
